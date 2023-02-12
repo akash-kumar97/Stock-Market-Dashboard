@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container, .watchlist{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+h2{
+    /* background-color: grey; */
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+.search-box{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    /* padding: 5px; */
+    margin: 10px 0;
+}
+
+input{
+    flex: 6;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+
+
+
+.search-box #search-btn{
+    flex: 1;
+    border: 1px solid green;
+    border-radius: 15px;
+    color: green;
+}
+
+.search-box #search-btn:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0 0 3px;
+    cursor: pointer;
+}
+
+.chart-type{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin: 15px 0;
+
+}
+
+.chart-type .btn{
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    /* box-shadow: 0 0 3px; */
+}
+
+.chart-type .btn:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 2px;
+}
+
+.btn.active{
+    background-color: white;
+    border-color: beige;
+    box-shadow: 0 0 3px;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color:grey;
+    padding: 5px;
+    /* font-size: large; */
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    border: none;
+    margin: 10px 5px;
+
+}
+
+span, #remove{
+    margin: 0 5px;
+    text-align: center;
+    width: 25%;
+    background-color: beige;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 3px;
+}
+
+#remove:hover{
+    background-color: azure;
+    color: red;
+    border: 1px solid red;
+    box-shadow: 0 0 3px;
+}
+
+li #item-symbol{
+    flex: 1;
+}
+
+li #item-price{
+    flex: 1;
+}
+
+li #item-filter{
+    flex: 2;
+}
+
+
+li #remove{
+    flex: 1;
+    background-color: red;
+    color: white;
+    width: 40px;
+    text-align: center;
+}
+
+
+
+
+.bg{
+    background-color: red;
+}
+
+#modal{
+    background-color: antiquewhite ;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#modal #modal-table{
+    background-color: lightgray;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+#modal-table-heading{
+    /* background-color: red; */
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+}
+
+th{
+    background-color: grey;
+    /* margin: 0 10px; */
+    width: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 1px; */
+}
+
+#modal-table-data{
+    background-color: beige;
+    /* margin: 10px; */
+    font-size: 13px;
+}
+
+td{
+    border-radius: 10px;
+}

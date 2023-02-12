@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script defer src="app1.js"></script>
+    <title>Stock Market Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Stock Market Dashboard</h2>
+    
+        <div class="search-container">
+            <div class="search-box">
+                <input type="search" placeholder="Search for Symbol..." id="search-input">
+                <button  id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="chart-type">
+                <button class="btn" id="intraday" value="INTRADAY">INTRADAY</button>
+                <button class="btn" id="daily" value="DAILY_ADJUSTED">DAILY</button>
+                <button class="btn" id="weekly" value="WEEKLY">WEEKLY</button>
+                <button class="btn" id="monthly" value="MONTHLY">MONTHLY</button>
+            </div>
+        </div>
+    </div>
+    <div id="show-modal">
+
+    </div>  
+    <div class="watchlist">
+        <h3 id="watchlist-heading">YOUR WATCHLIST</h3>
+        <div class="items" id="items">
+            <!-- <li>
+                <span id="item-symbol">AMZN</span>
+                <span id="item-price">123.45</span>
+                <span id="item-filter">INTRADAY</span>
+                <span id="remove"><i class="fa-solid fa-remove"></i></span>
+            </li> -->
+        </div>
+        <div id="modal">
+            <!-- <table id="modal-table">
+                <thead id="modal-table-heading">
+                    <th>DATE</th>
+                    <th>OPEN</th>
+                    <th>HIGH</th>
+                    <th>LOW</th>
+                    <th>CLOSE</th>
+                    <th>VOLUME</th>
+                </thead>
+                <tbody id="modal-table-data">
+                    <tr>
+                        <td>2023-02-10</td>
+                        <td>133.78</td>
+                        <td>135.77</td>
+                        <td>133.50</td>
+                        <td>135.60</td>
+                        <td>5049571</td>
+                    </tr>
+                    <tr>
+                        <td>2023-02-10</td>
+                        <td>133.78</td>
+                        <td>135.77</td>
+                        <td>133.50</td>
+                        <td>135.60</td>
+                        <td>5049571</td>
+                    </tr>
+                    <tr>
+                        <td>2023-02-10</td>
+                        <td>133.78</td>
+                        <td>135.77</td>
+                        <td>133.50</td>
+                        <td>135.60</td>
+                        <td>5049571</td>
+                    </tr>
+                    <tr>
+                        <td>2023-02-10</td>
+                        <td>133.78</td>
+                        <td>135.77</td>
+                        <td>133.50</td>
+                        <td>135.60</td>
+                        <td>5049571</td>
+                    </tr>
+                    <tr>
+                        <td>2023-02-10</td>
+                        <td>133.78</td>
+                        <td>135.77</td>
+                        <td>133.50</td>
+                        <td>135.60</td>
+                        <td>5049571</td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </div>
+    </div>  
+</body>
+</html>
