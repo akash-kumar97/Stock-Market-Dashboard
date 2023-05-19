@@ -5,7 +5,11 @@
 }
 
 body{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-image: url(wance-paleri-s7gyjnH7Ulk-unsplash.jpg);
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -160,7 +164,9 @@ li #remove{
 }
 
 #modal{
-    background-color: antiquewhite ;
+    /* background-color: antiquewhite ; */
+    background-image: url(wance-paleri-s7gyjnH7Ulk-unsplash.jpg);
+    background-size: cover;
     display: none;
     position: fixed;
     top: 0;
@@ -179,8 +185,8 @@ li #remove{
     border-radius: 20px;
     box-shadow: 0 0 3px;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 25%;
+    left: 30%;
 }
 
 #modal-table-heading{
